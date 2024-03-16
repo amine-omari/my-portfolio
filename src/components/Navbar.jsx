@@ -1,5 +1,10 @@
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <div className="h-full flex items-center justify-between">
+      <div>1</div>
+      <div>2</div>
+    </div>
+  );
 };
 
 export default Navbar;
