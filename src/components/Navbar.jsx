@@ -1,5 +1,24 @@
 import Link from "next/link";
 
+const links = [
+  {
+    url: "/",
+    link: "Home",
+  },
+  {
+    url: "/about",
+    link: "About",
+  },
+  {
+    url: "/portfolio",
+    link: "Portfolio",
+  },
+  {
+    url: "/contact",
+    link: "Contact",
+  },
+];
+
 const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
