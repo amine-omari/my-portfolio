@@ -3,19 +3,19 @@ import Link from "next/link";
 const links = [
   {
     url: "/",
-    link: "Home",
+    title: "Home",
   },
   {
     url: "/about",
-    link: "About",
+    title: "About",
   },
   {
     url: "/portfolio",
-    link: "Portfolio",
+    title: "Portfolio",
   },
   {
     url: "/contact",
-    link: "Contact",
+    title: "Contact",
   },
 ];
 
@@ -33,6 +33,15 @@ const Navbar = () => {
           <div className="w-10 h-1 bg-black rounded-full"></div>
           <div className="w-10 h-1 bg-black rounded-full"></div>
         </button>
+
+        {/* Menu List */}
+        <div>
+          {links.map((link) => (
+            <Link key={link.title} href={link.url}>
+              {link.title}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
