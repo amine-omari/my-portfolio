@@ -9,20 +9,42 @@ import { useState } from "react";
 
 const links = [
   {
+    id: 0,
     url: "/",
     title: "Home",
   },
   {
+    id: 1,
     url: "/about",
     title: "About",
   },
   {
+    id: 2,
     url: "/portfolio",
     title: "Portfolio",
   },
   {
+    id: 3,
     url: "/contact",
     title: "Contact",
+  },
+];
+
+const ICONS_LINKS = [
+  {
+    id: 0,
+    icon: <Github />,
+    link: "/",
+  },
+  {
+    id: 1,
+    icon: <Twitter />,
+    link: "/",
+  },
+  {
+    id: 2,
+    icon: <Linkedin />,
+    link: "/",
   },
 ];
 
@@ -33,9 +55,9 @@ const Navbar = () => {
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* Links */}
       <div className="hidden md:flex space-x-4">
-        {links.map((link) => (
-          <Link key={link.title} href={link.url}>
-            {link.title}
+        {links.map(({ id, url, title }) => (
+          <Link key={id} href={url}>
+            {title}
           </Link>
         ))}
       </div>
@@ -48,7 +70,13 @@ const Navbar = () => {
       </div>
 
       {/* Social Icons Container */}
-      <div>{[<Github />, <Twitter />, <Linkedin />]}</div>
+      <div>
+        {ICONS_LINKS.map(({ id, icon, link }) => (
+          <Link key={id} href={link}>
+            {icon}
+          </Link>
+        ))}
+      </div>
 
       {/* Menu Container */}
       <div className="md:hidden">
