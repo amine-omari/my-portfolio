@@ -1,3 +1,5 @@
+"use client";
+
 import Logo from "@/icons/Logo";
 import Link from "next/link";
 import { useState } from "react";
@@ -34,20 +36,25 @@ const Navbar = () => {
       </div>
       <div>
         {/* Menu Button */}
-        <button className="w-10 h-8 flex flex-col justify-between relative z-50">
+        <button
+          className="w-10 h-8 flex flex-col justify-between relative z-50"
+          onClick={() => setOpen(!open)}
+        >
           <div className="w-10 h-1 bg-white rounded-full"></div>
           <div className="w-10 h-1 bg-white rounded-full"></div>
           <div className="w-10 h-1 bg-white rounded-full"></div>
         </button>
 
         {/* Menu List */}
-        <div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center text-2xl space-y-8">
-          {links.map((link) => (
-            <Link key={link.title} href={link.url}>
-              {link.title}
-            </Link>
-          ))}
-        </div>
+        {open && (
+          <div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center text-2xl space-y-8">
+            {links.map((link) => (
+              <Link key={link.title} href={link.url}>
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
