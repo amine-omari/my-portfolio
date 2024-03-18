@@ -1,6 +1,7 @@
 "use client";
 
 import Logo from "@/icons/logos/Logo";
+import Github from "@/icons/social/Github";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -44,8 +45,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Social Logos */}
-      <div></div>
+      {/* Social Icons Container */}
+      <div>{[<Github />]}</div>
 
       {/* Menu Container */}
       <div className="md:hidden">

@@ -4,8 +4,8 @@ const Github = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="25"
-      height="25"
+      width="24"
+      height="24"
       viewBox="0 0 1024 1024"
       fill="none"
     >
