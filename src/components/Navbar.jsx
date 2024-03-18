@@ -53,6 +53,13 @@ const Navbar = () => {
 
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      {/* LOGO */}
+      <div>
+        <Link href="/">
+          <Logo />
+        </Link>
+      </div>
+
       {/* Links */}
       <div className="hidden md:flex space-x-4">
         {links.map(({ id, url, title }) => (
@@ -62,17 +69,10 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* LOGO */}
-      <div className="md:hidden">
-        <Link href="/">
-          <Logo />
-        </Link>
-      </div>
-
       {/* Social Icons Container */}
-      <div>
+      <div className="hidden md:flex space-x-4 items-center">
         {ICONS_LINKS.map(({ id, icon, link }) => (
-          <Link key={id} href={link}>
+          <Link key={id} href={link} className="hover:scale-110 duration-300">
             {icon}
           </Link>
         ))}
