@@ -31,10 +31,10 @@ const Navbar = () => {
       </div>
       <div>
         {/* Menu Button */}
-        <button className="w-10 h-8 flex flex-col justify-between">
-          <div className="w-10 h-1 bg-black rounded-full"></div>
-          <div className="w-10 h-1 bg-black rounded-full"></div>
-          <div className="w-10 h-1 bg-black rounded-full"></div>
+        <button className="w-10 h-8 flex flex-col justify-between relative z-50">
+          <div className="w-10 h-1 bg-white rounded-full"></div>
+          <div className="w-10 h-1 bg-white rounded-full"></div>
+          <div className="w-10 h-1 bg-white rounded-full"></div>
         </button>
 
         {/* Menu List */}
