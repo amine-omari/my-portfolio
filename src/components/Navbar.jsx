@@ -6,6 +6,7 @@ import Linkedin from "@/icons/social/Linkedin";
 import Twitter from "@/icons/social/Twitter";
 import Link from "next/link";
 import { useState } from "react";
+import NavLink from "./NavLink";
 
 const links = [
   {
@@ -63,9 +64,7 @@ const Navbar = () => {
       {/* Links */}
       <div className="hidden md:flex space-x-4">
         {links.map(({ id, url, title }) => (
-          <Link key={id} href={url}>
-            {title}
-          </Link>
+          <NavLink key={id} url={url} title={title} />
         ))}
       </div>
 
