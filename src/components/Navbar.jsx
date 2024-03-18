@@ -2,6 +2,7 @@
 
 import Logo from "@/icons/logos/Logo";
 import Github from "@/icons/social/Github";
+import Twitter from "@/icons/social/Twitter";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -46,7 +47,7 @@ const Navbar = () => {
       </div>
 
       {/* Social Icons Container */}
-      <div>{[<Github />]}</div>
+      <div>{[<Github />, <Twitter />]}</div>
 
       {/* Menu Container */}
       <div className="md:hidden">
