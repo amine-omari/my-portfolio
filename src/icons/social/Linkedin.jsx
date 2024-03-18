@@ -4,8 +4,8 @@ function Linkedin() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="30"
-      width="30"
+      height="25"
+      width="25"
       viewBox="0 0 72 72"
     >
       <g fill="none" fill-rule="evenodd">
