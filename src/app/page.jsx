@@ -4,12 +4,12 @@ const Homepage = () => {
   return (
     <div className="h-full flex flex-col lg:flex-row max-w-[1400px] mx-auto">
       {/* Image Container */}
-      <div className="h-1/2 relative">
-        <Image src="/hero.png" alt="Hero img" fill className="object-contain" />
+      <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <Image src="/hero.png" alt="Hero img" fill priority className="object-contain" />
       </div>
 
       {/* Text Container */}
-      <div className="h-1/2 flex flex-col space-y-8 items-center justify-center">
+      <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col space-y-8 items-center justify-center">
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold">Amine Omari</h1>
 
@@ -24,7 +24,7 @@ const Homepage = () => {
         </p>
 
         {/* Buttons */}
-        <div className="space-x-2">
+        <div className="w-full space-x-2">
           <button className="py-3 px-6 rounded-xl border-2 border-black hover:bg-black hover:text-white hover:scale-95 duration-300">
             View My Work
           </button>
