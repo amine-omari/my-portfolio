@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Homepage = () => {
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col lg:flex-row max-w-[1400px] mx-auto">
       {/* Image Container */}
       <div className="h-1/2 relative">
         <Image src="/hero.png" alt="Hero img" fill className="object-contain" />
@@ -11,10 +11,10 @@ const Homepage = () => {
       {/* Text Container */}
       <div className="h-1/2 flex flex-col space-y-8 items-center justify-center">
         {/* Title */}
-        <h1 className="text-4xl font-bold">Amine Omari</h1>
+        <h1 className="text-4xl md:text-6xl font-bold">Amine Omari</h1>
 
         {/* Description */}
-        <p>
+        <p className="md:text-xl">
           Hi👋! I'm a frontend developer. I create websites people enjoy using.
           I'm skilled in HTML, CSS, and JavaScript, and I use tools like
           React.js and Next.js to enhance websites. I add fun animations using
