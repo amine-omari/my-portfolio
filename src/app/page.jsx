@@ -1,5 +1,13 @@
 const Homepage = () => {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      {/* Image Container */}
+      <div></div>
+
+      {/* Text Container */}
+      <div></div>
+    </div>
+  );
 };
 
 export default Homepage;
