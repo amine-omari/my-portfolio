@@ -22,6 +22,16 @@ const Homepage = () => {
           strive for excellence. Let's collaborate to bring your ideas to life
           and make your website shine online!
         </p>
+
+        {/* Buttons */}
+        <div>
+          <button className="py-3 px-6 rounded-xl border border-black hover:scale-95 duration-300">
+            View My Work
+          </button>
+          <button className="py-3 px-6 rounded-xl border border-black hover:scale-95 duration-300">
+            Contact Me
+          </button>
+        </div>
       </div>
     </div>
   );
