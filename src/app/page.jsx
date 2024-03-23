@@ -1,11 +1,11 @@
 const Homepage = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       {/* Image Container */}
-      <div></div>
+      <div className="h-1/2"></div>
 
       {/* Text Container */}
-      <div></div>
+      <div className="h-1/2"></div>
     </div>
   );
 };
