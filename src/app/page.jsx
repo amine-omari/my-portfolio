@@ -24,11 +24,11 @@ const Homepage = () => {
         </p>
 
         {/* Buttons */}
-        <div>
-          <button className="py-3 px-6 rounded-xl border border-black hover:scale-95 duration-300">
+        <div className="space-x-2">
+          <button className="py-3 px-6 rounded-xl border-2 border-black hover:bg-black hover:text-white hover:scale-95 duration-300">
             View My Work
           </button>
-          <button className="py-3 px-6 rounded-xl border border-black hover:scale-95 duration-300">
+          <button className="py-3 px-6 rounded-xl border-2 border-black hover:bg-black hover:text-white hover:scale-95 duration-300">
             Contact Me
           </button>
         </div>
