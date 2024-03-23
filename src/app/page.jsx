@@ -9,7 +9,13 @@ const Homepage = () => {
       </div>
 
       {/* Text Container */}
-      <div className="h-1/2"></div>
+      <div className="h-1/2">
+        {/* Title */}
+        <h1></h1>
+
+        {/* Description */}
+        <p></p>
+      </div>
     </div>
   );
 };
