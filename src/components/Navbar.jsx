@@ -88,6 +88,9 @@ const Navbar = () => {
     },
     opened: {
       x: 0,
+      transition: {
+        staggerChildren: 0.2,
+      },
     },
   };
 
@@ -95,9 +98,6 @@ const Navbar = () => {
     closed: {
       x: -10,
       opacity: 0,
-      transition: {
-        staggerChildren: 0.2,
-      },
     },
     opened: {
       x: 0,
@@ -162,10 +162,8 @@ const Navbar = () => {
             className="fixed inset-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center text-2xl space-y-8 z-40"
           >
             {links.map((link) => (
-              <motion.div>
-                <Link key={link.title} href={link.url}>
-                  {link.title}
-                </Link>
+              <motion.div key={link.title} variants={listItemVariant}>
+                <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
           </motion.div>
