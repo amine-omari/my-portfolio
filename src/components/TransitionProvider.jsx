@@ -1,7 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 
-const TransitionProvider = () => {
+const TransitionProvider = ({children}) => {
   return (
     <AnimatePresence>
       <div>TransitionProvider</div>
