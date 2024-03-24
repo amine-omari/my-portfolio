@@ -84,7 +84,7 @@ const Navbar = () => {
 
   const listVariant = {
     closed: {
-      x: "100vw",
+      x: 100,
     },
     opened: {
       x: 0,
@@ -120,23 +120,23 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* Menu Button */}
         <button
-          className="w-10 h-8 flex flex-col justify-between relative z-50"
+          className="w-7 h-6 flex flex-col justify-between relative z-50"
           onClick={() => setOpen(!open)}
         >
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded-full origin-left"
+            className="w-7 h-1 bg-black rounded-full origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded-full"
+            className="w-7 h-1 bg-black rounded-full"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded-full origin-left"
+            className="w-7 h-1 bg-black rounded-full origin-left"
           ></motion.div>
         </button>
         {/* Menu List */}
