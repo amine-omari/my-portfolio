@@ -91,6 +91,17 @@ const Navbar = () => {
     },
   };
 
+  const listItemVariant = {
+    closed: {
+      x: -10,
+      opacity: 0,
+    },
+    opened: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className="h-full flex items-center justify-between max-w-[1400px] mx-auto px-4 lg:text-lg">
       {/* LOGO */}
@@ -148,9 +159,11 @@ const Navbar = () => {
             className="fixed inset-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center text-2xl space-y-8 z-40"
           >
             {links.map((link) => (
-              <Link key={link.title} href={link.url}>
-                {link.title}
-              </Link>
+              <motion.div>
+                <Link key={link.title} href={link.url}>
+                  {link.title}
+                </Link>
+              </motion.div>
             ))}
           </motion.div>
         )}
