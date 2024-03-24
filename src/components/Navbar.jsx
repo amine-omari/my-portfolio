@@ -53,6 +53,34 @@ const ICONS_LINKS = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const TopVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: 45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };
+  const centerVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: 45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };
+  const bottomVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: 45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };
+
   return (
     <div className="h-full flex items-center justify-between max-w-[1400px] mx-auto px-4 lg:text-lg">
       {/* LOGO */}
