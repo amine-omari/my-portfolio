@@ -115,7 +115,7 @@ const Navbar = () => {
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded-full"
+            className="w-10 h-1 bg-white rounded-full origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
@@ -125,7 +125,7 @@ const Navbar = () => {
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded-full"
+            className="w-10 h-1 bg-white rounded-full origin-left"
           ></motion.div>
         </button>
         {/* Menu List */}
