@@ -64,11 +64,10 @@ const Navbar = () => {
   };
   const centerVariants = {
     closed: {
-      rotate: 0,
+      opacity: 1,
     },
     opened: {
-      rotate: 45,
-      backgroundColor: "rgb(255,255,255)",
+      opacity: 0,
     },
   };
   const bottomVariants = {
@@ -76,7 +75,7 @@ const Navbar = () => {
       rotate: 0,
     },
     opened: {
-      rotate: 45,
+      rotate: -45,
       backgroundColor: "rgb(255,255,255)",
     },
   };
