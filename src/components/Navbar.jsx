@@ -62,6 +62,7 @@ const Navbar = () => {
       backgroundColor: "rgb(255,255,255)",
     },
   };
+
   const centerVariants = {
     closed: {
       opacity: 1,
@@ -70,6 +71,7 @@ const Navbar = () => {
       opacity: 0,
     },
   };
+
   const bottomVariants = {
     closed: {
       rotate: 0,
@@ -77,6 +79,15 @@ const Navbar = () => {
     opened: {
       rotate: -45,
       backgroundColor: "rgb(255,255,255)",
+    },
+  };
+
+  const listVariant = {
+    closed: {
+      x: "100vw",
+    },
+    opened: {
+      x: 0,
     },
   };
 
@@ -115,28 +126,28 @@ const Navbar = () => {
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded-full origin-left"
+            className="w-10 h-1 bg-black rounded-full origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded-full"
+            className="w-10 h-1 bg-black rounded-full"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded-full origin-left"
+            className="w-10 h-1 bg-black rounded-full origin-left"
           ></motion.div>
         </button>
         {/* Menu List */}
         {open && (
-          <div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center text-2xl space-y-8">
+          <motion.div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center text-2xl space-y-8">
             {links.map((link) => (
               <Link key={link.title} href={link.url}>
                 {link.title}
               </Link>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
