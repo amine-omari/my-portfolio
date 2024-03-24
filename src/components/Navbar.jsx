@@ -95,6 +95,9 @@ const Navbar = () => {
     closed: {
       x: -10,
       opacity: 0,
+      transition: {
+        staggerChildren: 0.2,
+      },
     },
     opened: {
       x: 0,
