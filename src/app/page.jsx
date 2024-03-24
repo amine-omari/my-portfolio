@@ -5,7 +5,13 @@ const Homepage = () => {
     <div className="h-full flex flex-col lg:flex-row max-w-[1400px] mx-auto">
       {/* Image Container */}
       <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-        <Image src="/hero.png" alt="Hero img" fill priority className="object-contain" />
+        <Image
+          src="/hero.png"
+          alt="Hero img"
+          fill
+          priority
+          className="object-contain"
+        />
       </div>
 
       {/* Text Container */}
