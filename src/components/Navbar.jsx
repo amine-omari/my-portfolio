@@ -7,6 +7,7 @@ import Twitter from "@/icons/social/Twitter";
 import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./NavLink";
+import { motion } from "framer-motion";
 
 const links = [
   {
@@ -84,9 +85,9 @@ const Navbar = () => {
           className="w-10 h-8 flex flex-col justify-between relative z-50"
           onClick={() => setOpen(!open)}
         >
-          <div className="w-10 h-1 bg-white rounded-full"></div>
-          <div className="w-10 h-1 bg-white rounded-full"></div>
-          <div className="w-10 h-1 bg-white rounded-full"></div>
+          <motion.div className="w-10 h-1 bg-white rounded-full"></motion.div>
+          <motion.div className="w-10 h-1 bg-white rounded-full"></motion.div>
+          <motion.div className="w-10 h-1 bg-white rounded-full"></motion.div>
         </button>
         {/* Menu List */}
         {open && (
