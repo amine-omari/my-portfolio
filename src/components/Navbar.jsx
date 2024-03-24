@@ -53,7 +53,7 @@ const ICONS_LINKS = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const TopVariants = {
+  const topVariants = {
     closed: {
       rotate: 0,
     },
@@ -112,9 +112,18 @@ const Navbar = () => {
           className="w-10 h-8 flex flex-col justify-between relative z-50"
           onClick={() => setOpen(!open)}
         >
-          <motion.div className="w-10 h-1 bg-white rounded-full"></motion.div>
-          <motion.div className="w-10 h-1 bg-white rounded-full"></motion.div>
-          <motion.div className="w-10 h-1 bg-white rounded-full"></motion.div>
+          <motion.div
+            variants={topVariants}
+            className="w-10 h-1 bg-white rounded-full"
+          ></motion.div>
+          <motion.div
+            variants={centerVariants}
+            className="w-10 h-1 bg-white rounded-full"
+          ></motion.div>
+          <motion.div
+            variants={bottomVariants}
+            className="w-10 h-1 bg-white rounded-full"
+          ></motion.div>
         </button>
         {/* Menu List */}
         {open && (
