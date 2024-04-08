@@ -1,9 +1,9 @@
 "use client";
 
 import Logo from "@/icons/logos/Logo";
-import Github from "@/icons/social/Github";
-import Linkedin from "@/icons/social/Linkedin";
-import Twitter from "@/icons/social/Twitter";
+import Github from "@/icons/socials/Github";
+import Linkedin from "@/icons/socials/Linkedin";
+import Twitter from "@/icons/socials/Twitter";
 import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./NavLink";
