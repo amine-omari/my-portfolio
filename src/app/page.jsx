@@ -30,7 +30,7 @@ const Homepage = () => {
             Hi👋! I'm a frontend developer. I create websites people enjoy
             using. I'm skilled in HTML, CSS, and JavaScript, and I use tools
             like React.js and Next.js to enhance websites. I add fun animations
-            using GSAP to make them more appealing. I pay close attention to
+            using GSAP and Framer-motion to make them more appealing. I pay close attention to
             detail and strive for excellence. Let's collaborate to bring your
             ideas to life and make your website shine online!
           </p>
