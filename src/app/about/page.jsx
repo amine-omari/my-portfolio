@@ -9,7 +9,20 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      page
+      {/* Container */}
+      <div className="h-full flex flex-col lg:flex-row max-w-[1400px] mx-auto">
+        {/* Text Container */}
+        <div>
+          {/* Biography Container */}
+          <div></div>
+          {/* Biography Container */}
+          <div></div>
+          {/* Biography Container */}
+          <div></div>
+        </div>
+        {/* SVG Container */}
+        <div></div>
+      </div>
     </motion.div>
   );
 };
