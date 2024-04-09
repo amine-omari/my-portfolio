@@ -10,7 +10,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row max-w-[1400px] mx-auto">
+      <div className="h-full flex flex-col lg:flex-row max-w-[1400px] px-4 mx-auto">
         {/* Image Container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
@@ -30,9 +30,10 @@ const Homepage = () => {
             Hi👋! I'm a frontend developer. I create websites people enjoy
             using. I'm skilled in HTML, CSS, and JavaScript, and I use tools
             like React.js and Next.js to enhance websites. I add fun animations
-            using GSAP and Framer-motion to make them more appealing. I pay close attention to
-            detail and strive for excellence. Let's collaborate to bring your
-            ideas to life and make your website shine online!
+            using GSAP and Framer-motion to make them more appealing. I pay
+            close attention to detail and strive for excellence. Let's
+            collaborate to bring your ideas to life and make your website shine
+            online!
           </p>
           {/* Buttons */}
           <div className="w-full space-x-2">
