@@ -1,6 +1,7 @@
 "use client";
 
 import CircleArrow from "@/icons/general/CircleArrow";
+import Logo from "@/icons/logos/Logo";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -36,7 +37,9 @@ const AboutPage = () => {
             </span>
 
             {/* Biography Signature */}
-            <div className="self-end"></div>
+            <div className="self-end">
+              <Logo />
+            </div>
 
             {/* Scroll Icon SVG */}
             <div>
