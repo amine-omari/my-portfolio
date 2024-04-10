@@ -96,7 +96,9 @@ const AboutPage = () => {
 
             {/* Skills List*/}
             <div>
-              <Skill />
+              {SKILLS.map(({ id, label }) => (
+                <Skill key={id} label={label} />
+              ))}
             </div>
 
             {/* Scroll Icon SVG */}
