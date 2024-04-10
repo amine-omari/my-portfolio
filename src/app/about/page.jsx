@@ -95,7 +95,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">SKILLS</h1>
 
             {/* Skills List*/}
-            <div>
+            <div className="flex flex-wrap max-w-sm gap-2">
               {SKILLS.map(({ id, label }) => (
                 <Skill key={id} label={label} />
               ))}
