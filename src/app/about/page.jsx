@@ -6,6 +6,45 @@ import Logo from "@/icons/logos/Logo";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
+  const SKILLS = [
+    {
+      id: 0,
+      label: "HTML",
+    },
+    {
+      id: 1,
+      label: "CSS",
+    },
+    {
+      id: 2,
+      label: "TailwindCss",
+    },
+    {
+      id: 3,
+      label: "Javascript",
+    },
+    {
+      id: 4,
+      label: "Typescript",
+    },
+    {
+      id: 5,
+      label: "Next.js",
+    },
+    {
+      id: 6,
+      label: "React.js",
+    },
+    {
+      id: 7,
+      label: "Framer Motion",
+    },
+    {
+      id: 8,
+      label: "Gsap",
+    },
+  ];
+
   return (
     <motion.div
       className="h-full"
