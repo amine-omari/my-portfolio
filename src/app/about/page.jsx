@@ -1,4 +1,6 @@
 "use client";
+
+import CircleArrow from "@/icons/general/CircleArrow";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -37,7 +39,9 @@ const AboutPage = () => {
             <div></div>
 
             {/* Scroll Icon SVG */}
-            <div></div>
+            <div>
+              <CircleArrow />
+            </div>
           </div>
 
           {/* Skills Container */}
