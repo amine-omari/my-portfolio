@@ -43,7 +43,9 @@ const AboutPage = () => {
 
             {/* Scroll Icon SVG */}
             <div>
-              <CircleArrow />
+              <button className="hover:scale-110 hover:text-[#EBB361] duration-200">
+                <CircleArrow />
+              </button>
             </div>
           </div>
 
