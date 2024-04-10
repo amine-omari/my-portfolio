@@ -16,12 +16,12 @@ const AboutPage = () => {
         {/* Text Container */}
         <div>
           {/* Biography Container */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col space-y-12 justify-center">
             {/* Biography Title */}
-            <h1>BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
 
             {/* Biography Description */}
-            <p>
+            <p className="text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
               nesciunt expedita asperiores veritatis sapiente maiores illum
               aspernatur animi fugit et? Qui, numquam quae facilis nobis culpa
@@ -30,13 +30,13 @@ const AboutPage = () => {
               aliquam laborum adipisci eum inventore?
             </p>
             {/* Biography Quote */}
-            <span>
+            <span className="italic">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
               quae.
             </span>
 
             {/* Biography Signature */}
-            <div></div>
+            <div className="self-end"></div>
 
             {/* Scroll Icon SVG */}
             <div>
