@@ -1,5 +1,6 @@
 "use client";
 
+import Skill from "@/components/Skill";
 import CircleArrow from "@/icons/general/CircleArrow";
 import Logo from "@/icons/logos/Logo";
 import { motion } from "framer-motion";
@@ -50,7 +51,22 @@ const AboutPage = () => {
           </div>
 
           {/* Skills Container */}
-          <div></div>
+          <div className="flex flex-col space-y-12 justify-center">
+            {/* Skills Title */}
+            <h1 className="font-bold text-2xl">SKILLS</h1>
+
+            {/* Skills List*/}
+            <div>
+              <Skill />
+            </div>
+
+            {/* Scroll Icon SVG */}
+            <div>
+              <button className="hover:scale-110 hover:text-[#EBB361] duration-200">
+                <CircleArrow />
+              </button>
+            </div>
+          </div>
 
           {/* Experience Container */}
           <div></div>
