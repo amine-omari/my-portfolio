@@ -1,8 +1,5 @@
 "use client";
 
-import Skill from "@/components/Skill";
-import CircleArrow from "@/icons/general/CircleArrow";
-import Logo from "@/icons/logos/Logo";
 import { motion } from "framer-motion";
 import Biography from "./Biography";
 
