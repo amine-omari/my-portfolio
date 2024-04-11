@@ -1,6 +1,46 @@
+import Skill from "@/app/about/Skill";
 import React from "react";
 
 const Skills = () => {
+  const SKILLS = [
+    {
+      id: 0,
+      label: "HTML",
+    },
+    {
+      id: 1,
+      label: "CSS",
+    },
+    {
+      id: 2,
+      label: "TailwindCss",
+    },
+    {
+      id: 3,
+      label: "Javascript",
+    },
+    {
+      id: 4,
+      label: "Typescript",
+    },
+    {
+      id: 5,
+      label: "Next.js",
+    },
+    {
+      id: 6,
+      label: "React.js",
+    },
+    {
+      id: 7,
+      label: "Framer Motion",
+    },
+    {
+      id: 8,
+      label: "Gsap",
+    },
+  ];
+
   return (
     <div className="flex flex-col space-y-12 justify-center">
       {/* Skills Title */}
