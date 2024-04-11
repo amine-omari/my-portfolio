@@ -4,6 +4,7 @@ import Skill from "@/components/Skill";
 import CircleArrow from "@/icons/general/CircleArrow";
 import Logo from "@/icons/logos/Logo";
 import { motion } from "framer-motion";
+import Biography from "./Biography";
 
 const AboutPage = () => {
   const SKILLS = [
@@ -57,6 +58,7 @@ const AboutPage = () => {
         {/* Text Container */}
         <div>
           {/* Biography Container */}
+          <Biography />
 
           {/* Skills Container */}
           <div className="flex flex-col space-y-12 justify-center">
