@@ -1,3 +1,5 @@
+import CircleArrow from "@/icons/general/CircleArrow";
+import Logo from "@/icons/logos/Logo";
 import React from "react";
 
 const Biography = () => {
