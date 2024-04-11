@@ -2,47 +2,9 @@
 
 import { motion } from "framer-motion";
 import Biography from "./Biography";
+import Skills from "./Skills";
 
 const AboutPage = () => {
-  const SKILLS = [
-    {
-      id: 0,
-      label: "HTML",
-    },
-    {
-      id: 1,
-      label: "CSS",
-    },
-    {
-      id: 2,
-      label: "TailwindCss",
-    },
-    {
-      id: 3,
-      label: "Javascript",
-    },
-    {
-      id: 4,
-      label: "Typescript",
-    },
-    {
-      id: 5,
-      label: "Next.js",
-    },
-    {
-      id: 6,
-      label: "React.js",
-    },
-    {
-      id: 7,
-      label: "Framer Motion",
-    },
-    {
-      id: 8,
-      label: "Gsap",
-    },
-  ];
-
   return (
     <motion.div
       className="h-full"
@@ -58,6 +20,7 @@ const AboutPage = () => {
           <Biography />
 
           {/* Skills Container */}
+          <Skills />
 
           {/* Experience Container */}
           <div></div>
