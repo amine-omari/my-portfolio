@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Biography from "./Biography";
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 const AboutPage = () => {
   return (
@@ -18,12 +19,10 @@ const AboutPage = () => {
         <div>
           {/* Biography Container */}
           <Biography />
-
           {/* Skills Container */}
           <Skills />
-
           {/* Experience Container */}
-          <div></div>
+          <Experience />
         </div>
         {/* SVG Container */}
         <div></div>
