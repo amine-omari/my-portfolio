@@ -1,3 +1,4 @@
+import ExperienceContainer from "@/components/ExperienceContainer";
 import React from "react";
 
 const Experience = () => {
@@ -10,12 +11,7 @@ const Experience = () => {
         {/* Experience List Item */}
         <div>
           {/* LEFT */}
-          <div>
-            <h2>Title</h2>
-            <p>Description</p>
-            <time>2024-Now</time>
-            <p>Company</p>
-          </div>
+          <ExperienceContainer />
         </div>
         {/* CENTER */}
         {/* RIGHT */}
