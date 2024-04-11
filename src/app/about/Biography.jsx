@@ -6,7 +6,7 @@ const Biography = () => {
   return (
     <div className="flex flex-col space-y-12 justify-center">
       {/* Biography Title */}
-      <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+      <h2 className="font-bold text-2xl">BIOGRAPHY</h2>
 
       {/* Biography Description */}
       <p className="text-lg">
