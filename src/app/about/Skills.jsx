@@ -1,4 +1,4 @@
-import Skill from "@/app/about/Skill";
+import Skill from "@/components/Skill";
 import React from "react";
 
 const Skills = () => {
