@@ -1,4 +1,5 @@
 import Skill from "@/components/Skill";
+import CircleArrow from "@/icons/general/CircleArrow";
 import React from "react";
 
 const Skills = () => {
